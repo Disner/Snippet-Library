@@ -15,6 +15,10 @@ You can install and activate the extension using one of the following methods:
 4. Select **Install from VSIX...**.
 5. Choose the file to install it.
 
+**Option 2: From install from marketplace**
+1. Visit https://marketplace.visualstudio.com/items?itemName=EltonDisner.snippet-library
+2. Click on the "Install" button
+3. Restart VS Code
 
 # Snippet Library
 
