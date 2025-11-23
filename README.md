@@ -1,6 +1,6 @@
 # Snippet Library
 
-<img src="images/icon.png" width="100" alt="Snippet Library Preview">
+<img src="images/icon.png" width="100" alt="Snippet Library logo">
 
 Complete snippet extension for web development, created as a replacement for Brackets Snippets for VS Code, Cursor, Windsurf, and other VS Code-based editors.
 
@@ -24,7 +24,7 @@ You can install and activate the extension using one of the following methods:
 
 **Snippet Library** is a powerful extension for Visual Studio Code that allows you to organize, manage, and reuse your code snippets efficiently. Inspired by "Brackets Snippets", it offers an intuitive visual interface to create and edit snippets without having to deal with complex JSON files.
 
-![Steps](images/step-by-step.gif)
+<img src="images/step-by-step.gif" alt="Snippet Library Preview">
 
 ## Main Features
 
