@@ -2,7 +2,7 @@
   "name": "snippet-library",
   "displayName": "Snippet Library",
   "description": "Organize and manage your own snippet collection to speed up development and standardize your programming workflow.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "pricing": "Free",
   "publisher": "eltondisner",
   "author": {
@@ -31,12 +31,13 @@
     "Snippets"
   ],
   "keywords": [
-    "php",
-    "html",
-    "css",
-    "javascript",
+    "snippet",
     "snippets",
-    "brackets"
+    "bookmarks",
+    "IntelliSense",
+    "manage snippets",
+    "snippet library",
+    "brackets snippets"
   ],
   "contributes": {
     "snippets": [],
