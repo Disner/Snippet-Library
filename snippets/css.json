@@ -1,0 +1,34 @@
+{
+  "Flexbox Container": {
+    "prefix": "flex",
+    "body": [
+      "display: flex;",
+      "justify-content: ${1:center};",
+      "align-items: ${2:center};",
+      "gap: ${3:1rem};"
+    ],
+    "description": "Container flexbox"
+  },
+
+  "Grid Container": {
+    "prefix": "grid",
+    "body": [
+      "display: grid;",
+      "grid-template-columns: ${1:repeat(3, 1fr)};",
+      "gap: ${2:1rem};"
+    ],
+    "description": "Container grid"
+  },
+
+  "Box Shadow": {
+    "prefix": "shadow",
+    "body": "box-shadow: 0 ${1:4px} ${2:6px} rgba(0, 0, 0, ${3:0.1});",
+    "description": "Box shadow"
+  },
+
+  "Text Shadow": {
+    "prefix": "textshadow",
+    "body": "text-shadow: ${1:2px} ${2:2px} ${3:4px} rgba(0, 0, 0, ${4:0.3});",
+    "description": "Text shadow"
+  }
+}

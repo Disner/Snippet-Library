@@ -1,0 +1,38 @@
+{
+  "Aria Label": {
+    "prefix": "aria",
+    "body": "aria-label=\"${1}\"",
+    "description": "Adiciona atributo aria-label"
+  },
+
+  "Aria Labelledby": {
+    "prefix": "arialabelledby",
+    "body": "aria-labelledby=\"${1}\"",
+    "description": "Adiciona atributo aria-labelledby"
+  },
+
+  "Aria Describedby": {
+    "prefix": "ariadescribedby",
+    "body": "aria-describedby=\"${1}\"",
+    "description": "Adiciona atributo aria-describedby"
+  },
+
+  "HTML5 Boilerplate": {
+    "prefix": "html5",
+    "body": [
+      "<!DOCTYPE html>",
+      "<html lang=\"pt-BR\">",
+      "<head>",
+      "\t<meta charset=\"UTF-8\">",
+      "\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+      "\t<title>${1:Título da Página}</title>",
+      "\t${2}",
+      "</head>",
+      "<body>",
+      "\t${3}",
+      "</body>",
+      "</html>"
+    ],
+    "description": "Template HTML5 básico"
+  }
+}

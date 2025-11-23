@@ -1,0 +1,10 @@
+.vscode/**
+.gitignore
+.git/**
+*.md
+!README.md
+install.sh
+install.bat
+TESTES.md
+COMO_ADICIONAR_SNIPPETS.md
+CHANGELOG.md

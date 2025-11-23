@@ -1,0 +1,23 @@
+{
+  "WordPress Enqueue Script": {
+    "prefix": "enqueue_script",
+    "body": [
+      "function ${1:theme}_scripts() {",
+      "\twp_enqueue_script( '${2:script-name}', get_template_directory_uri() . '/js/${3:script.js}', array('jquery'), '1.0.0', true );",
+      "}",
+      "add_action( 'wp_enqueue_scripts', '${1:theme}_scripts' );"
+    ],
+    "description": "Enfileira um script no WordPress"
+  },
+
+  "WordPress Enqueue Style": {
+    "prefix": "enqueue_style",
+    "body": [
+      "function ${1:theme}_styles() {",
+      "\twp_enqueue_style( '${2:style-name}', get_template_directory_uri() . '/css/${3:style.css}', array(), '1.0.0' );",
+      "}",
+      "add_action( 'wp_enqueue_scripts', '${1:theme}_styles' );"
+    ],
+    "description": "Enfileira um estilo no WordPress"
+  }
+}

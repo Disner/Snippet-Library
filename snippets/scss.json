@@ -1,0 +1,294 @@
+{
+  "Flexbox Container": {
+    "prefix": "flex",
+    "body": [
+      "display: flex;",
+      "justify-content: ${1:center};",
+      "align-items: ${2:center};",
+      "gap: ${3:1rem};"
+    ],
+    "description": "Container flexbox"
+  },
+
+  "Grid Container": {
+    "prefix": "grid",
+    "body": [
+      "display: grid;",
+      "grid-template-columns: ${1:repeat(3, 1fr)};",
+      "gap: ${2:1rem};"
+    ],
+    "description": "Container grid"
+  },
+
+  "Media Query": {
+    "prefix": "mq",
+    "body": [
+      "@media (min-width: ${1:768px}) {",
+      "\t${2}",
+      "}"
+    ],
+    "description": "Media query"
+  },
+
+  "Transition": {
+    "prefix": "trans",
+    "body": "transition: ${1:all} ${2:0.3s} ${3:ease};",
+    "description": "Transition CSS"
+  },
+
+  "Transform": {
+    "prefix": "transform",
+    "body": "transform: ${1:translateY(-50%)};",
+    "description": "Transform CSS"
+  },
+
+  "Position Absolute Center": {
+    "prefix": "abscenter",
+    "body": [
+      "position: absolute;",
+      "top: 50%;",
+      "left: 50%;",
+      "transform: translate(-50%, -50%);"
+    ],
+    "description": "Centralização absoluta"
+  },
+
+  "Position Relative": {
+    "prefix": "rel",
+    "body": "position: relative;",
+    "description": "Position relative"
+  },
+
+  "Position Absolute": {
+    "prefix": "abs",
+    "body": [
+      "position: absolute;",
+      "top: ${1:0};",
+      "left: ${2:0};"
+    ],
+    "description": "Position absolute"
+  },
+
+  "Box Shadow": {
+    "prefix": "shadow",
+    "body": "box-shadow: 0 ${1:4px} ${2:6px} rgba(0, 0, 0, ${3:0.1});",
+    "description": "Box shadow"
+  },
+
+  "Text Shadow": {
+    "prefix": "textshadow",
+    "body": "text-shadow: ${1:2px} ${2:2px} ${3:4px} rgba(0, 0, 0, ${4:0.3});",
+    "description": "Text shadow"
+  },
+
+  "Border Radius": {
+    "prefix": "radius",
+    "body": "border-radius: ${1:8px};",
+    "description": "Border radius"
+  },
+
+  "Gradient": {
+    "prefix": "gradient",
+    "body": "background: linear-gradient(${1:to right}, ${2:#ff0000}, ${3:#0000ff});",
+    "description": "Gradiente linear"
+  },
+
+  "Animation": {
+    "prefix": "animation",
+    "body": [
+      "animation: ${1:name} ${2:1s} ${3:ease} ${4:infinite};",
+      "",
+      "@keyframes ${1:name} {",
+      "\t0% {",
+      "\t\t${5:transform: translateX(0);}",
+      "\t}",
+      "\t100% {",
+      "\t\t${6:transform: translateX(100px);}",
+      "\t}",
+      "}"
+    ],
+    "description": "Animação CSS completa"
+  },
+
+  "Container Responsivo": {
+    "prefix": "container",
+    "body": [
+      ".container {",
+      "\tmax-width: ${1:1200px};",
+      "\tmargin: 0 auto;",
+      "\tpadding: 0 ${2:1rem};",
+      "}"
+    ],
+    "description": "Container responsivo"
+  },
+
+  "Reset CSS": {
+    "prefix": "reset",
+    "body": [
+      "* {",
+      "\tmargin: 0;",
+      "\tpadding: 0;",
+      "\tbox-sizing: border-box;",
+      "}"
+    ],
+    "description": "Reset CSS básico"
+  },
+
+  "Aspect Ratio": {
+    "prefix": "aspect",
+    "body": "aspect-ratio: ${1:16 / 9};",
+    "description": "Aspect ratio"
+  },
+
+  "Clamp": {
+    "prefix": "clamp",
+    "body": "font-size: clamp(${1:1rem}, ${2:2vw}, ${3:2rem});",
+    "description": "Clamp para valores responsivos"
+  },
+
+  "Scroll Snap": {
+    "prefix": "scrollsnap",
+    "body": [
+      "scroll-snap-type: ${1:x mandatory};",
+      "scroll-snap-align: ${2:center};"
+    ],
+    "description": "Scroll snap"
+  },
+
+  "Object Fit": {
+    "prefix": "objectfit",
+    "body": [
+      "width: 100%;",
+      "height: 100%;",
+      "object-fit: ${1:cover};",
+      "object-position: ${2:center};"
+    ],
+    "description": "Object fit para imagens"
+  },
+
+  "Truncate Text": {
+    "prefix": "truncate",
+    "body": [
+      "white-space: nowrap;",
+      "overflow: hidden;",
+      "text-overflow: ellipsis;"
+    ],
+    "description": "Texto truncado com reticências"
+  },
+
+  "Line Clamp": {
+    "prefix": "lineclamp",
+    "body": [
+      "display: -webkit-box;",
+      "-webkit-line-clamp: ${1:3};",
+      "-webkit-box-orient: vertical;",
+      "overflow: hidden;"
+    ],
+    "description": "Limitar número de linhas"
+  },
+
+  "Hide Scrollbar": {
+    "prefix": "hidescroll",
+    "body": [
+      "/* Firefox */",
+      "scrollbar-width: none;",
+      "",
+      "/* Chrome, Safari e Opera */",
+      "&::-webkit-scrollbar {",
+      "\tdisplay: none;",
+      "}"
+    ],
+    "description": "Esconder scrollbar"
+  },
+
+  "Custom Scrollbar": {
+    "prefix": "customscroll",
+    "body": [
+      "&::-webkit-scrollbar {",
+      "\twidth: ${1:8px};",
+      "}",
+      "",
+      "&::-webkit-scrollbar-track {",
+      "\tbackground: ${2:#f1f1f1};",
+      "}",
+      "",
+      "&::-webkit-scrollbar-thumb {",
+      "\tbackground: ${3:#888};",
+      "\tborder-radius: ${4:4px};",
+      "}",
+      "",
+      "&::-webkit-scrollbar-thumb:hover {",
+      "\tbackground: ${5:#555};",
+      "}"
+    ],
+    "description": "Scrollbar customizada"
+  },
+
+  "Button Reset": {
+    "prefix": "btnreset",
+    "body": [
+      "background: none;",
+      "border: none;",
+      "padding: 0;",
+      "cursor: pointer;",
+      "font: inherit;",
+      "color: inherit;"
+    ],
+    "description": "Reset de botão"
+  },
+
+  "Overlay": {
+    "prefix": "overlay",
+    "body": [
+      "position: fixed;",
+      "top: 0;",
+      "left: 0;",
+      "width: 100%;",
+      "height: 100%;",
+      "background: rgba(0, 0, 0, ${1:0.5});",
+      "z-index: ${2:999};"
+    ],
+    "description": "Overlay de tela cheia"
+  },
+
+  "Card Component": {
+    "prefix": "card",
+    "body": [
+      ".card {",
+      "\tbackground: ${1:#fff};",
+      "\tborder-radius: ${2:8px};",
+      "\tbox-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);",
+      "\tpadding: ${3:1.5rem};",
+      "\ttransition: transform 0.3s ease;",
+      "\t",
+      "\t&:hover {",
+      "\t\ttransform: translateY(-4px);",
+      "\t\tbox-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);",
+      "\t}",
+      "}"
+    ],
+    "description": "Card component"
+  },
+
+  "Glassmorphism": {
+    "prefix": "glass",
+    "body": [
+      "background: rgba(255, 255, 255, ${1:0.1});",
+      "backdrop-filter: blur(${2:10px});",
+      "-webkit-backdrop-filter: blur(${2:10px});",
+      "border: 1px solid rgba(255, 255, 255, ${3:0.2});"
+    ],
+    "description": "Efeito glassmorphism"
+  },
+
+  "Neumorphism": {
+    "prefix": "neuro",
+    "body": [
+      "background: ${1:#e0e0e0};",
+      "box-shadow: ",
+      "\t${2:20px} ${2:20px} ${3:60px} #bebebe,",
+      "\t-${2:20px} -${2:20px} ${3:60px} #ffffff;"
+    ],
+    "description": "Efeito neumorphism"
+  }
+}

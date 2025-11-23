@@ -1,0 +1,78 @@
+{
+  "name": "snippet-library",
+  "displayName": "Snippet Library",
+  "description": "Organize and manage your own snippet collection to speed up development and standardize your programming workflow.",
+  "version": "1.0.0",
+  "publisher": "eltondisner",
+  "author": {
+    "name": "Elton Disner",
+    "url": "https://elton.disner.com.br/",
+    "email": "elton@disner.com.br"
+  },
+  "icon": "images/icon.png",
+  "main": "./extension.js",
+  "activationEvents": [
+    "onCommand:snippet-library.openEditor",
+    "onLanguage:php",
+    "onLanguage:html",
+    "onLanguage:javascript",
+    "onLanguage:javascriptreact",
+    "onLanguage:css",
+    "onLanguage:scss"
+  ],
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "keywords": [
+    "php",
+    "html",
+    "css",
+    "javascript",
+    "snippets",
+    "brackets"
+  ],
+  "contributes": {
+    "snippets": [],
+    "commands": [
+      {
+        "command": "snippet-library.openEditor",
+        "title": "Snippet Library: Open Editor"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "snippet-library.openEditor",
+        "key": "ctrl+alt+s",
+        "mac": "cmd+alt+s",
+        "when": "editorTextFocus"
+      }
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "command": "snippet-library.openEditor",
+          "group": "navigation",
+          "when": "config.snippetLibrary.showContextMenu"
+        }
+      ]
+    },
+    "configuration": {
+      "title": "Snippet Library",
+      "properties": {
+        "snippetLibrary.showContextMenu": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show 'Snippet Library: Open Editor' in the editor context menu."
+        }
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Disner/Snippet-Library"
+  },
+  "homepage": "https://elton.disner.com.br/"
+}

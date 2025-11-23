@@ -1,0 +1,57 @@
+{
+  "Document Ready": {
+    "prefix": "ready",
+    "body": [
+      "document.addEventListener('DOMContentLoaded', function() {",
+      "\t${1}",
+      "});"
+    ],
+    "description": "Document ready vanilla JS"
+  },
+  "Query Selector": {
+    "prefix": "qs",
+    "body": "document.querySelector('${1}')${2}",
+    "description": "Query selector"
+  },
+
+  "Query Selector All": {
+    "prefix": "qsa",
+    "body": "document.querySelectorAll('${1}')${2}",
+    "description": "Query selector all"
+  },
+
+  "Add Event Listener": {
+    "prefix": "addevent",
+    "body": [
+      "${1:element}.addEventListener('${2:click}', function(e) {",
+      "\t${3}",
+      "});"
+    ],
+    "description": "Add event listener"
+  },
+
+  "Fetch API": {
+    "prefix": "fetch",
+    "body": [
+      "fetch('${1:url}')",
+      "\t.then(response => response.json())",
+      "\t.then(data => {",
+      "\t\t${2}",
+      "\t})",
+      "\t.catch(error => console.error('Error:', error));"
+    ],
+    "description": "Fetch API"
+  },
+
+  "Local Storage": {
+    "prefix": "localstorage",
+    "body": [
+      "// Salvar",
+      "localStorage.setItem('${1:key}', JSON.stringify(${2:value}));",
+      "",
+      "// Recuperar",
+      "const ${3:data} = JSON.parse(localStorage.getItem('${1:key}'));"
+    ],
+    "description": "Local Storage get/set"
+  }
+}
