@@ -4,9 +4,17 @@
 
 Complete snippet extension for web development, created as a replacement for Brackets Snippets for VS Code, Cursor, Windsurf, and other VS Code-based editors.
 
-## How to Use
-
 ### Snippet Activation
+
+You can install and activate the extension using one of the following methods:
+
+**Option 1: From .vsix File**
+1. Download or locate the `.vsix` file.
+2. Open VS Code and go to the **Extensions** view (`Ctrl+Shift+X`).
+3. Click the **...** (More Actions) menu in the top-right corner of the Extensions sidebar.
+4. Select **Install from VSIX...**.
+5. Choose the file to install it.
+
 
 # Snippet Library
 

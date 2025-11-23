@@ -3,11 +3,15 @@
   "displayName": "Snippet Library",
   "description": "Organize and manage your own snippet collection to speed up development and standardize your programming workflow.",
   "version": "1.0.0",
+  "pricing": "Free",
   "publisher": "eltondisner",
   "author": {
     "name": "Elton Disner",
     "url": "https://elton.disner.com.br/",
     "email": "elton@disner.com.br"
+  },
+  "sponsor": {
+    "url": "https://github.com/sponsors/Disner"
   },
   "icon": "images/icon.png",
   "main": "./extension.js",
